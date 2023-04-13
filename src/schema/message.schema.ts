@@ -7,8 +7,8 @@ export type MessageDocument = Document & Message;
 
 @Schema({ timestamps: true })
 export class Message {
-  @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Group' })
-  groupid: Group;
+  @Prop()
+  groupid: string;
 
   @Prop()
   username: string;
