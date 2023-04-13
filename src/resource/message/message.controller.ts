@@ -5,8 +5,10 @@ import { Model } from 'mongoose';
 import { Message } from 'src/schema/message.schema';
 import { MessageDocument } from 'src/schema/user.schema';
 import { MessageDto } from './message.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('message')
+@ApiTags('Message')
 export class MessageController {
   constructor(
     @InjectModel(Message.name) private model: Model<MessageDocument>,
