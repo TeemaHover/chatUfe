@@ -14,4 +14,8 @@ export class GroupDto {
   @ApiProperty()
   @IsString()
   isLesson: boolean;
+
+  @ApiProperty()
+  @IsString()
+  groupid: string;
 }

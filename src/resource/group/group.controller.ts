@@ -17,6 +17,7 @@ export class GroupController {
         groupname: dto.groupname,
         username: dto.username,
         isLesson: dto.isLesson,
+        groupid: dto.groupid,
       });
     } catch (error) {
       console.error(error.message);
