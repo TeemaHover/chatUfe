@@ -10,4 +10,8 @@ export class GroupDto {
   @ApiProperty()
   @IsString()
   username: string;
+
+  @ApiProperty()
+  @IsString()
+  isLesson: boolean;
 }

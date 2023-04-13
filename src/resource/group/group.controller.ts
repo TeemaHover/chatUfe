@@ -16,6 +16,7 @@ export class GroupController {
       return await this.model.create({
         groupname: dto.groupname,
         username: dto.username,
+        isLesson: dto.isLesson,
       });
     } catch (error) {
       console.error(error.message);
