@@ -11,6 +11,12 @@ export class Group {
 
   @Prop()
   username: string;
+
+  @Prop()
+  isLesson: boolean;
+
+  @Prop()
+  groupid: string;
 }
 
 export const GroupSchema = SchemaFactory.createForClass(Group);
