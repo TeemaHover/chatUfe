@@ -1,7 +1,5 @@
 /* eslint-disable prettier/prettier */
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import mongoose, { Document } from 'mongoose';
-import { Group } from './group.schema';
 
 export type MessageDocument = Document & Message;
 
